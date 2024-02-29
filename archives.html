@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your News Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.show-image-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            var imageDiv = this.nextElementSibling;
+            if (imageDiv.style.display === "none") {
+                imageDiv.style.display = "block";
+                this.textContent = "إخفاء الصورة";
+            } else {
+                imageDiv.style.display = "none";
+                this.textContent = "إظهار الصورة"; 
+            }
+        });
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">Nairah</h1>
+                <ul>
+                    <li><a href="https://www.reddit.com/r/NairahSinai/">Reddit</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-content" class="container">
+        <!-- Example Post -->
+        <article class="post">
+            <h2 class="post-title">القصة الحقيقية كاملة, ماسبب الخلاف بين نيرة وشروق</h2>
+            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
+            <p class="post-excerpt">"في تطور جديد للأحداث المتعلقة بالطالبة نيرة، كشفت إحدى زميلاتها تفاصيل مثيرة حول الواقعة التي أثارت رأي عام واسع. وفقًا لزميلتها، سمعت نيرة حديثًا خاصًا يخص زميلتها شروق وطه، مما دفعها لمحاولة نصح شروق بطريقة غير مباشرة.
+
+                لم تتقبل شروق النصيحة وقامت بفتح هاتف نيرة وهي نأمة واخذت منه صور بشعرها الطبيعي, ولم تكون هناك صور اخري مثل ما كان يتداولة الكثير من الناس
+                المصدر: ابن عم نيرة"</p>
+            <!-- زر لإظهار الصورة -->
+            <button class="show-image-btn">إظهار الصورة</button>
+            <!-- قسم الصورة مخفي بشكل افتراضي -->
+            <div class="post-image" style="display:none;">
+                <img src="Assets/القصة-الحقيقية-كاملة-v0-z0qmafxwcllc1.webp" alt="وصف الصورة">
+            </div>
+        </article>
+        <article class="post">
+            <h2 class="post-title">وكيل كلية العريش يقوم بتهديد والد نيرة</h2>
+            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
+            <p class="post-excerpt">"صرح قريب نيرة صلاح، الضحية في الواقعة الأخيرة، بأن وكيل كلية الطب البيطري بالعريش قد وجه تهديدات إلى والد نيرة، مطالبًا إياه بالتراجع عن المحضر الذي قدمه للدفاع عن حق ابنته."</p>
+            <!-- زر لإظهار الصورة -->
+            <button class="show-image-btn">إظهار الصورة</button>
+            <!-- قسم الصورة مخفي بشكل افتراضي -->
+            <div class="post-image" style="display:none;">
+                <img src="Assets/Da7yaThdeed.jpeg" alt="وصف الصورة">
+            </div>
+        </article>
+        <article class="post">
+            <h2 class="post-title">تقرير طبي بحالة نيرة</h2>
+            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
+            <p class="post-excerpt">"في صورة لتقرير طبي اثناء تواجدها بالمستشفي, ان نيرة تعاني من عالة تسمم من مادة مجهولة بكمية مجهولة, وتعاني من ألم بالبطن.. شاهد بالصورة"</p>
+            <!-- زر لإظهار الصورة -->
+            <button class="show-image-btn">إظهار الصورة</button>
+            <!-- قسم الصورة مخفي بشكل افتراضي -->
+            <div class="post-image" style="display:none;">
+                <img src="Assets/التقرير-الطبي-v0-k4opel1vyklc1.webp" alt="وصف الصورة">
+            </div>
+        </article>
+        
+
+        <!-- Add more posts here -->
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
