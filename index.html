@@ -5,23 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirah News Site</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.show-image-btn').forEach(button => {
-        button.addEventListener('click', function () {
-            var imageDiv = this.nextElementSibling;
-            if (imageDiv.style.display === "none") {
-                imageDiv.style.display = "block";
-                this.textContent = "إخفاء الصورة";
-            } else {
-                imageDiv.style.display = "none";
-                this.textContent = "إظهار الصورة"; 
-            }
-        });
-    });
-});
 
-    </script>
 </head>
 <body>
     <header>
@@ -35,65 +19,15 @@
             </div>
         </nav>
     </header>
-
+<div class="container" id="sort-container">
+    <button class="newest clicked"> الاحدث </button>
+    <button class="oldest">
+        الاقدم 
+    </button>
+</div>
     <div id="main-content" class="container">
         <!-- Example Post -->
-<article class="post">
-<h2 class="post-title">تفاصيل جديدة عن <mark>قتل</mark> نيرة</h2>
-<p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
-<p class="post-excerpt" style="white-space: pre-wrap;">حسب اقاويل اهلها و اصدقائها المقربين ان نيرة الله يرحمها كانت من حفظة القران الكريم.
-وانا نيرة كانت صائمة فمستحيل ان تفطر علي سم.
-ثايناً انه ليس هناك حبوب غلة في العريش.
-اتفرجو علي فيديو الأعلامي اسامة لمزيد من التفاصيل
-</p>
-
-            <button class="show-image-btn">إظهار الفيديو</button>
-            <!-- قسم الصورة مخفي بشكل افتراضي -->
-            <div class="post-image" style="display:none;">
-                <div class="twitter-video">
-                    <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ar" dir="rtl">مفاجأة جديدة في قضية بنت الظابط وطالبة العريش<a href="https://twitter.com/hashtag/%D8%AC%D8%A8%D9%87%D9%87_%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1_%D9%85%D8%B5%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#جبهه_تحرير_مصر</a><a href="https://twitter.com/hashtag/%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87_%D8%AD%D8%A7%D8%AA%D9%85_%D9%85%D8%AD%D9%81%D9%88%D8%B8?src=hash&amp;ref_src=twsrc%5Etfw">#محاسبه_حاتم_محفوظ</a> <a href="https://twitter.com/hashtag/%D9%85%D8%AC%D8%B2%D8%B1%D9%87_%D8%A7%D9%84%D8%B7%D8%AD%D9%8A%D9%86?src=hash&amp;ref_src=twsrc%5Etfw">#مجزره_الطحين</a> <a href="https://twitter.com/hashtag/%D8%A7%D9%84%D8%B0%D9%87%D8%A8?src=hash&amp;ref_src=twsrc%5Etfw">#الذهب</a> <a href="https://twitter.com/hashtag/%D8%B7%D8%A7%D9%84%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B4?src=hash&amp;ref_src=twsrc%5Etfw">#طالبة_العريش</a> <a href="https://twitter.com/hashtag/%D8%B7%D8%A7%D9%84%D8%A8%D8%A9_%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B4?src=hash&amp;ref_src=twsrc%5Etfw">#طالبة_جامعة_العريش</a> <a href="https://t.co/ZCklFUi304">pic.twitter.com/ZCklFUi304</a></p>&mdash; Osama Gaweesh (@osgaweesh) <a href="https://twitter.com/osgaweesh/status/1763540010643431760?ref_src=twsrc%5Etfw">March 1, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                </div>
-            </div>
-        </article>
-                <article class="post">
-            <h2 class="post-title">تحويل شروق و5 زملائها والمشرفة للنيابة العامة</h2>
-            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
-            <p class="post-excerpt" style="white-space: pre-wrap;">اخبار عن "اهل مصر" تفيد بأن النيابة قامت بتحويل شروق و خمسة من زملائها وتوقيف الرائد والدها لحتي انتهاء التحقيقات.</p>
-            <!-- زر لإظهار الصورة -->
-            <button class="show-image-btn">إظهار الصورة</button>
-            <!-- قسم الصورة مخفي بشكل افتراضي -->
-            <div class="post-image" style="display:none;">
-                <img src="Assets/Shrouktojail.jpg" alt="وصف الصورة">
-                <img src="Assets/SpeakUp.jpg" alt="وصف الصورة">
-
-
-            </div>
-        </article>
-        <article class="post">
-            <h2 class="post-title">توقيف الضابط والد شروق</h2>
-            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
-            <p class="post-excerpt" style="white-space: pre-wrap;">اخبار من مصدر القاهرة 24 ان الداخلية اوقفت الظابط والد الطالبة المتهمة شروق</p>
-            <!-- زر لإظهار الصورة -->
-            <button class="show-image-btn">إظهار الصورة</button>
-            <!-- قسم الصورة مخفي بشكل افتراضي -->
-            <div class="post-image" style="display:none;">
-                <img src="Assets/ShroukDad.jpg" alt="وصف الصورة">
-
-            </div>
-        </article>
-        <article class="post">
-            <h2 class="post-title">تفريغات جديدة من تلفون نيرة</h2>
-            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
-            <p class="post-excerpt" style="white-space: pre-wrap;">تفريغات جديدة لواتساب نيرة صلاح, بخصوص الخناقة ما بنها وبين شروق.</p>
-            <!-- زر لإظهار الصورة -->
-            <button class="show-image-btn">إظهار الصورة</button>
-            <!-- قسم الصورة مخفي بشكل افتراضي -->
-            <div class="post-image" style="display:none;">
-                <img src="Assets/NairaPhoneTwo.jpg" alt="وصف الصورة">
-                <img src="Assets/NairaPhone.jpg" alt="وصف الصورة">
-            </div>
-        </article>
-        <article class="post">
+        <article class="post" data-date-id="5">
             <h2 class="post-title">شروق سحبت ملفها, وبعض الأشاعات الغير مؤكدة علي سفرها</h2>
             <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
             <p class="post-excerpt" style="white-space: pre-wrap;">"طلبات كلية الطب البيطري بالعريش: نيرة جات السكن تحت حماية المشرفين.
@@ -105,7 +39,7 @@
                 <img src="Assets/ShroukLeft.jpg" alt="وصف الصورة">
             </div>
         </article>
-        <article class="post">
+        <article class="post" data-date-id="4">
             <h2 class="post-title">القصة الحقيقية كاملة, ماسبب الخلاف بين نيرة وشروق</h2>
             <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
             <p class="post-excerpt">"في تطور جديد للأحداث المتعلقة بالطالبة نيرة، كشفت إحدى زميلاتها تفاصيل مثيرة حول الواقعة التي أثارت رأي عام واسع. وفقًا لزميلتها، سمعت نيرة حديثًا خاصًا يخص زميلتها شروق وطه، مما دفعها لمحاولة نصح شروق بطريقة غير مباشرة.
@@ -119,7 +53,7 @@
                 <img src="Assets/القصة-الحقيقية-كاملة-v0-z0qmafxwcllc1.webp" alt="وصف الصورة">
             </div>
         </article>
-        <article class="post">
+        <article class="post" data-date-id="3">
             <h2 class="post-title">وكيل كلية العريش يقوم بتهديد والد نيرة</h2>
             <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
             <p class="post-excerpt">"صرح قريب نيرة صلاح، الضحية في الواقعة الأخيرة، بأن وكيل كلية الطب البيطري بالعريش قد وجه تهديدات إلى والد نيرة، مطالبًا إياه بالتراجع عن المحضر الذي قدمه للدفاع عن حق ابنته."</p>
@@ -130,7 +64,7 @@
                 <img src="Assets/Da7yaThdeed.jpeg" alt="وصف الصورة">
             </div>
         </article>
-        <article class="post">
+        <article class="post" data-date-id="2">
             <h2 class="post-title">تقرير طبي بحالة نيرة</h2>
             <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
             <p class="post-excerpt">"في صورة لتقرير طبي اثناء تواجدها بالمستشفي, ان نيرة تعاني من عالة تسمم من مادة مجهولة بكمية مجهولة, وتعاني من ألم بالبطن.. شاهد بالصورة"</p>
@@ -141,7 +75,7 @@
                 <img src="Assets/التقرير-الطبي-v0-k4opel1vyklc1.webp" alt="وصف الصورة">
             </div>
         </article>
-        <article class="post">
+        <article class="post" data-date-id="1">
             <h2 class="post-title">معلومات عن شروق</h2>
             <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 29 فبراير 2024</p>
             <p class="post-excerpt" style="white-space:pre-wrap;">الاسم: شروق احمد كمال احمد شحاته
@@ -179,7 +113,52 @@
         <!-- Add more posts here -->
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.show-image-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            var imageDiv = this.nextElementSibling;
+            if (imageDiv.style.display === "none") {
+                imageDiv.style.display = "block";
+                this.textContent = "إخفاء الصورة";
+            } else {
+                imageDiv.style.display = "none";
+                this.textContent = "إظهار الصورة"; 
+            }
+        });
+    });
+});
+document.querySelector('.newest').addEventListener('click', function () {
+    document.querySelector('.newest').classList.add('clicked');
+    document.querySelector('.oldest').classList.remove('clicked');
+    var articles = document.querySelectorAll('.post');
+    var sortedArticles = Array.from(articles).sort(function (a, b) {
+        var dateA = parseInt(a.getAttribute('data-date-id'));
+        var dateB = parseInt(b.getAttribute('data-date-id'));
+        return dateB - dateA;
+    });
+    var mainContent = document.getElementById('main-content');
+    sortedArticles.forEach(article => {
+        mainContent.appendChild(article);
+    });
+});
 
+document.querySelector('.oldest').addEventListener('click', function () {
+    document.querySelector('.oldest').classList.add('clicked');
+    document.querySelector('.newest').classList.remove('clicked');
+    var articles = document.querySelectorAll('.post');
+    var sortedArticles = Array.from(articles).sort(function (a, b) {
+        var dateA = parseInt(a.getAttribute('data-date-id'));
+        var dateB = parseInt(b.getAttribute('data-date-id'));
+        return dateA - dateB;
+    });
+    var mainContent = document.getElementById('main-content');
+    sortedArticles.forEach(article => {
+        mainContent.appendChild(article);
+    });
+});
+
+    </script>
 
     <script src="script.js"></script>
 </body>
