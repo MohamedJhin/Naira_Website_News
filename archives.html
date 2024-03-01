@@ -1,43 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nairah News Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.show-image-btn').forEach(button => {
-        button.addEventListener('click', function () {
-            var imageDiv = this.nextElementSibling;
-            if (imageDiv.style.display === "none") {
-                imageDiv.style.display = "block";
-                this.textContent = "إخفاء الصورة";
-            } else {
-                imageDiv.style.display = "none";
-                this.textContent = "إظهار الصورة"; 
-            }
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your News Site</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.show-image-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                var imageDiv = this.nextElementSibling;
+                if (imageDiv.style.display === "none") {
+                    imageDiv.style.display = "block";
+                    this.textContent = "إخفاء الصورة";
+                } else {
+                    imageDiv.style.display = "none";
+                    this.textContent = "إظهار الصورة"; 
+                }
+            });
         });
     });
-});
-
-    </script>
-</head>
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="container">
-                <h1 class="logo">Nairah</h1>
-                <ul>
-                    <li><a href="index.html">  Home</a></li> <!-- إضافة رابط الأرشيف هنا -->
-                    <li><a href="https://www.reddit.com/r/NairahSinai/">Reddit</a></li>
-                </ul>
+    
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="container">
+                    <h1 class="logo">Nairah</h1>
+                    <ul>
+                        <li><a href="index.html">  Home</a></li> <!-- إضافة رابط الأرشيف هنا -->
+                        <li><a href="https://www.reddit.com/r/NairahSinai/">Reddit</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <div id="main-content" class="container">
+            <!-- Example Post -->
+        </article>
+        <article class="post">
+            <h2 class="post-title">طه اتضرب وفالمستشفي, واعترف بقتل نيرة!</h2>
+            <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
+            <p class="post-excerpt" style="white-space: pre-wrap;">أفادت شهادة احد طلاب جامعة العريش, بكلية الطب البيطري ما يأتي:
+    اولاً: بعدالواقعة شباب ضربوا طه وهو حالياً فالمستشفي.
+    ثانياً: اثناء ضرب طه اعترف ان شروق قتلت نيرة!
+    صورة من شهادة المصدر: افتح الصورة</p>
+            <!-- زر لإظهار الصورة -->
+            <button class="show-image-btn">إظهار الصورة</button>
+            <!-- قسم الصورة مخفي بشكل افتراضي -->
+            <div class="post-image" style="display:none;">
+                <img src="Assets/يجدعان-الحقو-v0-7b7wo5t1tolc1.webp" alt="وصف الصورة">
             </div>
-        </nav>
-    </header>
-
-    <div id="main-content" class="container">
-        <!-- Example Post -->
+        </article>
+        
         <article class="post">
             <h2 class="post-title">نيرة انتحرت ام قتلت؟</h2>
             <p class="post-meta">نشر بواسطة <a href="#">مجهول</a> في 1 مارس 2024</p>
